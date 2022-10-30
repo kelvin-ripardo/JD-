@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de tabuada</title>
+    <link rel="stylesheet" href="css/style.css">
+   
+
+</head>
+
+<body>
+    <!--7) Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
+    Tabuada de 5:
+    5 X 1 = 5
+    5 X 2 = 10
+    ...
+    5 X 10 = 50-->
+
+        <div class="conteiner">
+            <label for="">Tabuada do numero</label>
+            <input type="number" id="n1" placeholder="Digite um numero">
+         <Button type="button" onclick="multiplicar()" > Verificar</Button>
+        <div id="res"></div>
+         </div>
+
+    <script>
+        function multiplicar(){
+
+            var num = parseInt(document.getElementById("n1").value);
+            var resposta = document.getElementById('res');
+            var tabuada='';
+
+            for(cont = 1; cont <=10; cont++) {
+                tabuada += num +" x "+ cont + " = " +
+               num * cont +"<br />";
+
+               res.innerHTML = tabuada;
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>

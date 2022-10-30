@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(236, 240, 6);
+    font-size: 25px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(180, 221, 176);
+    font-family: Poor Story, Verdana, Geneva, Tahoma, sans-serif;
+}
+input, label{
+    width:  150px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+button {
+    width: 90px;
+    border-radius: 10px;
+    background-color: rgb(251, 255, 0);
+}
+
+
+
+.conteiner {
+    border: 1px solid rgb(112, 105, 105);
+    height: 400px;
+    width: 600px;
+    background-color: rgb(4, 80, 20);
+    border-radius: 15px;
+    box-shadow: black 50px 50px 40px;
+}
+#res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}

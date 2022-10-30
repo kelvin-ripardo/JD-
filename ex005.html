@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma e a média dos números</title>
+
+    <style>
+        body {
+            background: rgb(98, 11, 199);
+            color: aliceblue;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--5) Faça um programa que leia 5 números e informe a soma e a média dos números.-->
+
+    Digite Primeiro numero<input type="number" id="n1"><br>
+    Digite segundo numero<input type="number" id="n2"><br>
+    Digite terceiro numero<input type="number" id="n3"><br>
+    Digite Quarto numero<input type="number" id="n4"><br>
+    Digite Quinto numero<input type="number" id="n5"><br>
+    <button type="button" onclick="calculo()">Calcular</button>
+    <div id="res"></div>
+    <div id="resu"></div>
+
+
+    <script>
+        function calculo() {
+         var num1 = document.getElementById('n1')
+         var num2 = document.getElementById('n2')
+         var num3 = document.getElementById('n3')
+         var num4 = document.getElementById('n4')
+         var num5 = document.getElementById('n5')
+         
+         var n1 = Number(num1.value)
+         var n2 = Number(num2.value)
+         var n3 = Number(num3.value)
+         var n4 = Number(num4.value)
+         var n5 = Number(num5.value)
+        
+         var res1 = n1 + n2 + n3 + n4 + n5;
+         var res2 =  res1 / 5;
+
+          res.innerHTML = `resultado da soma ${res1}`;
+          resu.innerHTML = `resultado da divisão ${res2}`;
+
+        }
+    </script>
+    
+</body>
+</html>
+
+
